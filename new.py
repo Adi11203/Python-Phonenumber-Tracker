@@ -1,11 +1,11 @@
 import phonenumbers
 from phonenumbers import geocoder 
-from test import number
+#from test import number
 import folium
 
-Key = "6d6f969fd9024ac8afde957f0c86a5ba"
+Key = ""
 
-#number = input("Enter phone number with country code:")
+number = input("Enter phone number with country code:")
 check_number = phonenumbers.parse(number)
 number_location = geocoder.description_for_number(check_number, "en")
 print(number_location)
